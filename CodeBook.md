@@ -66,13 +66,13 @@ This section is specific to the data provided as part of the Coursera project de
 *tidy_data.csv*
 
 subject_id:  identifies the subject (study participant)  
-     1-30  
++ 1-30  
 	
 activity:  the activity being performed when the measurements were taken  
-     [ laying, sitting, standing, walking, walking_downstairs, walking_upstairs ]  
++ [ laying, sitting, standing, walking, walking_downstairs, walking_upstairs ]  
 	
 group: the data group from which the data came  
-     [ test, train ]  
++ [ test, train ]  
 	
 timeBodyAcc.mean.X   
 timeBodyAcc.mean.Y  

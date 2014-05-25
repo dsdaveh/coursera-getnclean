@@ -18,7 +18,7 @@ readGroupData <- function ( group_name ) {
      keep <- grep('-mean\\(|-std\\(', mNames$V2)  #keep on -mean() and -std()
      x <- x[,keep]
      names(x) <- lapply(names(x), sub, pattern="\\()", replacement="") # remove parentheses
-     names(x) <- lapply(names(x), sub, pattern="-", replacement="_")   # swap dashes for underscores
+     names(x) <- lapply(names(x), gsub, pattern="-", replacement=".")   # swap dashes for periods
      names(x) <- lapply(names(x), sub, pattern="^t", replacement="time")   # t -> time...
      names(x) <- lapply(names(x), sub, pattern="^f", replacement="freq")   # f -> freq...zz2 <- lapply(zz, sub, pattern="\\()", replacement="")
      
